@@ -1,0 +1,45 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+body {
+  background-color: red;
+  color: black;
+  text-align: center;
+  font-size: 2em;
+  animation-name: party;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes party {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: cyan;}
+  100% {background-color: magenta;}
+}
+
+.gifs {
+  display: block;
+  margin: auto;
+  width: 95%;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
